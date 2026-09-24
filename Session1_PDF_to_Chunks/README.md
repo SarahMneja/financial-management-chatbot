@@ -8,3 +8,6 @@ semantic chunks for the RAG pipeline.
 
 Main output:
 - chunks.jsonl
+
+Link to Google colab notebook: 
+https://colab.research.google.com/drive/1z_LWvo6O1RTEQxp1pqe-fSnHZytYXysy?usp=sharing
