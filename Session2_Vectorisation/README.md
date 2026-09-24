@@ -16,3 +16,6 @@ Main steps:
 Main outputs:
 - index.faiss
 - chunks.json
+
+Link to Google Colab Notebook:
+https://colab.research.google.com/drive/1QC-JcuycrOu2aRMk_ohXn6ev7OA6bp4c?usp=sharing
