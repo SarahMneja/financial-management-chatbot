@@ -1,0 +1,14 @@
+# La cle API ne doit JAMAIS partir sur GitHub.
+.env
+
+# Environnement virtuel
+venv/
+.venv/
+
+# Fichiers generes par la vectorisation (lourds, reconstructibles)
+data/index.faiss
+data/chunks.json
+
+# Python
+__pycache__/
+*.pyc
