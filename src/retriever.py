@@ -161,20 +161,22 @@ class Retriever:
     # -------------------------------------------------------------------
 
     def chercher(self, question, n_passages=None, n_candidats=None):
-        """Retourne les passages les plus pertinents."""
-
         n_passages = n_passages or config.N_PASSAGES
         n_candidats = n_candidats or config.N_CANDIDATS
 
-        candidats = self._chercher_candidats(
-            question,
-            n_candidats
-        )
+        candidats = self._chercher_candidats(question, n_candidats)
 
-        candidats = self._reclasser(
-            question,
-            candidats
-        )
+        print(f"\nNombre de candidats FAISS : {len(candidats)}")
+
+        for i, candidat in enumerate(candidats, start=1):
+            print(
+                f"[{i:02d}] "
+                f"FAISS {candidat['score_faiss']:.3f} "
+                f"{candidat['id']} "
+                f"page {candidat['metadata'].get('page', '?')}"
+            )
+
+        candidats = self._reclasser(question, candidats)
 
         return candidats[:n_passages]
 
