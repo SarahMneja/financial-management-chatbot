@@ -1,14 +1,20 @@
-# La cle API ne doit JAMAIS partir sur GitHub.
+# API secrets
 .env
 
-# Environnement virtuel
+# Python virtual environments
 venv/
 .venv/
 
-# Fichiers generes par la vectorisation (lourds, reconstructibles)
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated vectorisation files
 data/index.faiss
 data/chunks.json
 
-# Python
-__pycache__/
-*.pyc
+# Generated evaluation reports
+evaluation/resultats/
+
+# Chat history, if generated locally
+data/historique.json

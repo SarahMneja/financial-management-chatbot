@@ -1,0 +1,9 @@
+[server]
+port = 8502
+fileWatcherType = "none"
+
+[theme]
+primaryColor = "#B7295A"
+backgroundColor = "#241F28"
+secondaryBackgroundColor = "#565457"
+textColor = "#FFFFFF"

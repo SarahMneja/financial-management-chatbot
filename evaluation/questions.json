@@ -1,0 +1,54 @@
+{
+  "_readme": [
+    "Evaluation set for the Fundamentals of Financial Management chatbot.",
+    "chunks_attendus contains the chunk IDs that really contain the answer.",
+    "An empty chunks_attendus list means the question is outside the document scope.",
+    "reference is a manually written answer grounded in the textbook.",
+    "Verify every expected chunk ID against data/chunks.json."
+  ],
+  "questions": [
+    {
+      "question": "What is finance?",
+      "chunks_attendus": ["chunk_0032"],
+      "reference": "Finance is generally divided into financial management, capital markets, and investments. It concerns how money and financial resources are managed."
+    },
+    {
+      "question": "What is financial management?",
+      "chunks_attendus": ["chunk_0036"],
+      "reference": "Financial management, also called corporate finance, focuses on decisions about which assets a firm should acquire, how to raise the capital needed to buy those assets, and how to run the firm to maximize its value."
+    },
+    {
+      "question": "What do financial managers do?",
+      "chunks_attendus": [
+        "chunk_0034",
+        "chunk_0033",
+        "chunk_0038",
+        "chunk_0035"
+      ],
+      "reference": "Financial managers make decisions about a firm's assets, financing, and operations. Their decisions concern acquiring assets, raising capital, and managing the firm in ways that support its value."
+    },
+    {
+      "question": "What is the main objective of financial management?",
+      "chunks_attendus": [
+        "chunk_0022",
+        "chunk_0036"
+      ],
+      "reference": "The objective described in the document is to manage the firm in a way that maximizes its value."
+    },
+    {
+      "question": "What are the responsibilities of a CFO?",
+      "chunks_attendus": [
+        "chunk_0034",
+        "chunk_0033",
+        "chunk_0038",
+        "chunk_0035"
+      ],
+      "reference": "The chief financial officer is a senior financial manager responsible for overseeing major financial functions of the firm. Confirm the specific responsibilities against the relevant textbook passages."
+    },
+    {
+      "question": "What is the recipe for couscous?",
+      "chunks_attendus": [],
+      "reference": null
+    }
+  ]
+}

@@ -1,8 +1,25 @@
-# Vectorisation et recherche
+# Seance 2 — Vectorisation et recherche
 sentence-transformers>=2.7.0
 faiss-cpu>=1.8.0
 numpy>=1.26.0
 
-# Generation
-groq>=0.11.0
+# Seance 3 — Generation
+groq>=0.37.0
 python-dotenv>=1.0.0
+
+# Seance 4 — Interface
+streamlit>=1.37.0
+markdown>=3.6        # rend le markdown du modele dans nos bulles HTML
+
+# Seance 4 — Evaluation RAGAS
+#
+# Ces trois-la sont EPINGLEES a une version exacte, contrairement au reste.
+# ragas et langchain evoluent vite et se cassent mutuellement : un
+# "pip install ragas" sans version peut installer un couple incompatible.
+# Ces versions-ci fonctionnent ensemble.
+#
+# LangChain est une dependance de RAGAS, pas du chatbot : aucun fichier de
+# src/ ne l'importe. RAGAS attend un objet LangChain pour son modele juge.
+ragas==0.2.15
+langchain-groq==0.3.2
+langchain-core==0.3.86
