@@ -1,8 +1,10 @@
-# Financial Management Chatbot
+# Financial Management Chatbot (RAG)
 
-A Retrieval-Augmented Generation (RAG) chatbot that answers questions using *Fundamentals of Financial Management, 12th Edition*, by Eugene F. Brigham and Joel F. Houston.
+A Retrieval-Augmented Generation (RAG) chatbot that answers questions from the textbook *Fundamentals of Financial Management* (12th edition). It retrieves the most relevant passages, generates answers grounded in them with source citations, and declines questions the book does not cover. The project includes retrieval and answer-quality evaluation and a Streamlit web interface.
 
-The project transforms a financial-management textbook into searchable text, retrieves relevant passages using semantic similarity, and uses a large language model (LLM) to generate answers grounded in those passages. It also includes retrieval evaluation, answer-quality evaluation, and a web interface.
+**Built with:** Python · Sentence Transformers · FAISS · Groq API · Streamlit · RAGAS
+
+**Status:** in progress. Technical details are below.
 
 ## Table of Contents
 
